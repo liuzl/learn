@@ -1,0 +1,3 @@
+Q: Adapt your logical form form Exercise 1.1 to compute the first word of any string. Your answer should be (lambda x ...). Create a logical form that applies this on the argument (string "compositionality is key").
+
+A: ((lambda x (call .substring (var x) (number 0) (call .indexOf (var x) (string " ")))) (string "compositionality is key"))

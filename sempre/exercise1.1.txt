@@ -1,0 +1,3 @@
+Q: write a logical form that computes the first word ("compositionality") in the string "compositionality is key".
+
+A: (call .substring (string "compositionality is key") (number 0) (call .indexOf (string "compositionality is key") (string " ")))

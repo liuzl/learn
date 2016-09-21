@@ -1,0 +1,11 @@
+Q: write lambda DCS logical forms for the following utterances:
+
+`city with the largest area`
+`top 5 cities by area`
+`countries whose capitals have area at least 500 squared kilometers`
+`states bordering Oregon and Washington`
+
+A:
+(argmax 1 1 (fb:type.object.type fb:location.citytown) fb:location.location.area)
+(argmax 1 5 (fb:type.object.type fb:location.citytown) fb:location.location.area)
+(and (fb:type.object.type fb:location.country) (fb:location.location.area (>= 9600000))) # countries whose area at least 9600000 squared kilometers

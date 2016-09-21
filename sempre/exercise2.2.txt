@@ -1,0 +1,6 @@
+Q:  turn your "first word" program into a rule so that you can parse the following utterances into $String:
+
+A:
+(rule $string (first word in) (ConstantFn (lambda x (call .substring (var x) (number 0) (call .indexOf (var x) (string " "))))))
+(rule $ROOT ($string $PHRASE) (JoinFn forward))
+

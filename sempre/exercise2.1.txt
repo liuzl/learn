@@ -1,0 +1,8 @@
+Q: write rules that can parse the following utterances into into the category $Expr:
+length of hello world         # 11
+length of one                 # 3
+
+A:
+(rule $Function (length of) (ConstantFn (lambda x (call .length (var x)))))
+(rule $Expr ($Function $PHRASE) (JoinFn forward))
+

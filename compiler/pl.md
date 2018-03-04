@@ -1,7 +1,9 @@
 # Programming Language
 ## 编译相关网页
+* [Lexical Scanning in Go](https://talks.golang.org/2011/lex.slide#1)
 * [An Interpreter for Ael](http://cs.lmu.edu/~ray/notes/aelinterpreter/)
 * [ohm](https://github.com/harc/ohm)
+* [Ohm: Parsing Made Easy](https://nextjournal.com/dubroy/ohm-parsing-made-easy)
 * [How to implement a programming language in JavaScript](http://lisperator.net/pltut/)
 * [强类型 JavaScript 的解决方案](http://www.ruanyifeng.com/blog/2015/02/strong-typing-javascript.html)
 * [A tiny evaluator and compiler of arithmetic expressions.](https://github.com/mgechev/tiny-compiler)

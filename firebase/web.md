@@ -17,3 +17,7 @@ firebase init
 ```sh
 firebase deploy
 ```
+
+### 参考资料
+* *[firebase托管官方文档](https://firebase.google.com/docs/hosting/?hl=zh-cn)*
+* *[codelabs例子](https://codelabs.developers.google.com/codelabs/firebase-web/)*

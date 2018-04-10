@@ -7,7 +7,7 @@ project(examples)
 # Tell cmake we will need dlib.  This command will pull in dlib and compile it
 # into your project.  Note that you don't need to compile or install dlib.  All
 # cmake needs is the dlib source code folder and it will take care of everything.
-add_subdirectory(../dlib/dlib dlib_build)
+add_subdirectory(./dlib/dlib dlib_build)
 
 
 # The next thing we need to do is tell CMake about the code you want to
@@ -22,6 +22,8 @@ add_executable(dnn_face_recognition_ex dnn_face_recognition_ex.cpp)
 target_link_libraries(dnn_face_recognition_ex dlib::dlib)
 
 
+add_executable(server_http_ex server_http_ex.cpp)
+target_link_libraries(server_http_ex dlib::dlib)
 
 # To compile this program all you need to do is ask cmake.  You would type
 # these commands from within the directory containing this CMakeLists.txt

@@ -5,6 +5,22 @@ import (
 	"strings"
 )
 
+func Reverse(input string) string {
+	s := strings.Fields(input)
+	return strings.Join(reverse(s), " ")
+}
+
+func reverse(ss []string) []string {
+	l := len(ss)
+	if l <= 1 {
+		return ss
+	}
+	for i := 0; i < l/2; i++ {
+		ss[i], ss[l-1-i] = ss[l-1-i], ss[i]
+	}
+	return ss
+}
+
 func GetNGramFromArray(min, max int, words []string) map[string]int {
 	if min <= 0 || max <= 0 || min > max {
 		return nil
@@ -25,5 +41,7 @@ func GetNGramFromArray(min, max int, words []string) map[string]int {
 func main() {
 	words := []string{"let", "us"} //, "talk", "about", "what", "will", "do"}
 	ret := GetNGramFromArray(1, 2, words)
-	fmt.Printf("%+v", ret)
+	for k, v := range ret {
+		fmt.Printf("%s,%s: %d\n", k, Reverse(k), v)
+	}
 }

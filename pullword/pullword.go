@@ -73,13 +73,7 @@ func calc(m map[string]*Token) {
 		}
 
 		// calculate the degree of flexibility
-		leftEntropy := entropy(v.Left)
-		rightEntropy := entropy(v.Right)
-		if leftEntropy > rightEntropy {
-			v.Flex = rightEntropy
-		} else {
-			v.Flex = leftEntropy
-		}
+		v.Flex = math.Min(entropy(v.Left), entropy(v.Right))
 
 		// calculate score
 		v.Score = v.Freq * v.Poly * v.Flex

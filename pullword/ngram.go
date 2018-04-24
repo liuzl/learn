@@ -35,10 +35,11 @@ func GetNGramFromArray(min, max int, words []string) map[string]*Token {
 	return dict
 }
 
-func GetNGram(min, max int, input string) map[string]*Token {
+func GetNGram(min, max int, input string) (map[string]*Token, int) {
 	d := ling.NewDocument(input)
 	if err := nlp.Annotate(d); err != nil {
-		return nil
+		return nil, 0
 	}
-	return GetNGramFromArray(min, max, d.XRealTokens(ling.Norm))
+	words := d.XRealTokens(ling.Norm)
+	return GetNGramFromArray(min, max, words), len(words)
 }

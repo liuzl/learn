@@ -11,7 +11,7 @@ import (
 //  - sum_i (p_i * log_e(p_i))
 func Entropy(p []float64) float64 {
 	if len(p) == 0 {
-		return math.MaxFloat64
+		return 1 //math.MaxFloat64
 	}
 	var e float64
 	for _, v := range p {
@@ -38,8 +38,8 @@ func Process(m map[string]*Token, total float64) {
 	if total < 1 {
 		return
 	}
-	for _, v := range m {
-		v.Freq /= total
+	for k, v := range m {
+		v.Freq = v.Freq / total * float64(len(strings.Fields(k)))
 	}
 	calc(m)
 	calc(m)

@@ -31,7 +31,8 @@ func main() {
 		if c == io.EOF {
 			break
 		}
-		ret := pullword.GetNGram(1, 6, line)
+		ret, cnt := pullword.GetNGram(1, 5, line)
+		total += float64(cnt)
 		for k, v := range ret {
 			if m[k] == nil {
 				m[k] = v
@@ -44,14 +45,13 @@ func main() {
 					m[k].Right[w] += c
 				}
 			}
-			total += v.Freq
 		}
 	}
 	pullword.Process(m, total)
 	var l pullword.WordList
 	for k, v := range m {
 		//fmt.Printf("%s = %+v\n", k, v)
-		if v.Score > 0 {
+		if v.Score > 0.1 {
 			l = append(l, pullword.Word{strings.Join(strings.Fields(k), ""), v})
 		}
 	}

@@ -1,0 +1,62 @@
+package main
+
+import (
+	pullword ".."
+	"bufio"
+	"flag"
+	"fmt"
+	"github.com/golang/glog"
+	"io"
+	"os"
+	"sort"
+	"strings"
+)
+
+var (
+	input = flag.String("i", "input.txt", "input file")
+)
+
+func main() {
+	flag.Parse()
+	file, err := os.Open(*input)
+	if err != nil {
+		glog.Fatal(err)
+	}
+	defer file.Close()
+	br := bufio.NewReader(file)
+	m := make(map[string]*pullword.Token)
+	var total float64
+	for {
+		line, c := br.ReadString('\n')
+		if c == io.EOF {
+			break
+		}
+		ret := pullword.GetNGram(1, 6, line)
+		for k, v := range ret {
+			if m[k] == nil {
+				m[k] = v
+			} else {
+				m[k].Freq += v.Freq
+				for w, c := range v.Left {
+					m[k].Left[w] += c
+				}
+				for w, c := range v.Right {
+					m[k].Right[w] += c
+				}
+			}
+			total += v.Freq
+		}
+	}
+	pullword.Process(m, total)
+	var l pullword.WordList
+	for k, v := range m {
+		//fmt.Printf("%s = %+v\n", k, v)
+		if v.Score > 0 {
+			l = append(l, pullword.Word{strings.Join(strings.Fields(k), ""), v})
+		}
+	}
+	sort.Sort(l)
+	for _, v := range l {
+		fmt.Printf("%s = %+v\n", v.Str, v.Info)
+	}
+}

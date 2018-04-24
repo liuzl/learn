@@ -1,4 +1,8 @@
-package main
+package pullword
+
+import (
+	"strings"
+)
 
 func Reverse(input string) string {
 	s := strings.Fields(input)

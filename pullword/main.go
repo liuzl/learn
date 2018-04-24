@@ -15,20 +15,10 @@ var (
 	input = flag.String("i", "input.txt", "input file")
 )
 
-func Reverse(input string) string {
-	s := strings.Fields(input)
-	return strings.Join(reverse(s), " ")
-}
-
-func reverse(ss []string) []string {
-	l := len(ss)
-	if l <= 1 {
-		return ss
+func PointCount(m map[string]*TokenInfo) map[string]*TokenInfo {
+	for k, v := range m {
+		terms := strings.Fields(k)
 	}
-	for i := 0; i < l/2; i++ {
-		ss[i], ss[l-1-i] = ss[l-1-i], ss[i]
-	}
-	return ss
 }
 
 func main() {
@@ -39,7 +29,8 @@ func main() {
 	}
 	defer file.Close()
 	br := bufio.NewReader(file)
-	m := make(map[string]int)
+	m := make(map[string]*TokenInfo)
+	var total float64
 	for {
 		line, c := br.ReadString('\n')
 		if c == io.EOF {
@@ -47,10 +38,12 @@ func main() {
 		}
 		ret := goutil.GetNGram(1, 6, line)
 		for k, v := range ret {
-			m[k] += v
+			if m[k] == nil {
+				m[k] = &TokenInfo{}
+			}
+			m[k].Freq += v
+			total += v
 		}
 	}
-	for k, v := range m {
-		fmt.Printf("[%s] [%s]: %d\n", k, Reverse(k), v)
-	}
+
 }

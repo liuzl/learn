@@ -42,7 +42,6 @@ func Process(m map[string]*Token, total float64) {
 		v.Freq = v.Freq / total * float64(len(strings.Fields(k)))
 	}
 	calc(m)
-	calc(m)
 }
 
 func calc(m map[string]*Token) {

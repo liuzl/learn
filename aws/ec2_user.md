@@ -4,3 +4,7 @@
   
 2. 重启sshd
 * `sudo /etc/init.d/ssh restart`
+
+## 添加新用户
+1. 添加用户
+* `sudo adduser newuser`

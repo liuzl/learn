@@ -15,6 +15,7 @@
 * [What are the differences between PEGs and CFGs?
 ](https://stackoverflow.com/questions/5501074/what-are-the-differences-between-pegs-and-cfgs)
 * [Parsing Expression Grammar](https://en.wikipedia.org/wiki/Parsing_expression_grammar)
+* [Topic 3: Parsing and Yaccing - Princeton Computer Science](https://www.cs.princeton.edu/courses/archive/spring18/cos320/lectures/03-Parsing.pdf)
 ## 论文
 * [Natural Language Parsing for Fact Extraction from Source Code](https://pdfs.semanticscholar.org/22f2/3c869093cb78f22356b797a5726b3a0ee80a.pdf)
 * [Abstract Syntax Networks for Code Generation and Semantic Parsing](http://nlp.cs.berkeley.edu/pubs/Rabinovich-Stern-Klein_2017_AbstractSyntaxNetworks_paper.pdf)

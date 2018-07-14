@@ -19,3 +19,5 @@
 ## 论文
 * [Natural Language Parsing for Fact Extraction from Source Code](https://pdfs.semanticscholar.org/22f2/3c869093cb78f22356b797a5726b3a0ee80a.pdf)
 * [Abstract Syntax Networks for Code Generation and Semantic Parsing](http://nlp.cs.berkeley.edu/pubs/Rabinovich-Stern-Klein_2017_AbstractSyntaxNetworks_paper.pdf)
+## 书籍
+* [PARSING TECHNIQUES: A Practical Guide](http://ccl.pku.edu.cn/doubtfire/NLP/Parsing/Books/ParsingTechs_A_Practical_Guide.pdf)

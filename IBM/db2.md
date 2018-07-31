@@ -21,6 +21,17 @@ db2 connect to sample
 
 # 执行SQL
 db2 "SELECT * FROM STAFF"
+```
 
+## Python连接db2
 
+```python
+import ibm_db
+conn = ibm_db.connect("DATABASE=sample;HOSTNAME=localhost;PORT=50000;PROTOCOL=TCPIP;UID=db2inst1;PWD=db2inst1;", "", "")
+sql = "SELECT * FROM STAFF"
+stmt = ibm_db.exec_immediate(conn, sql)
+result = ibm_db.fetch_both(stmt)
+while result:
+    print(result)
+    result = ibm_db.fetch_both(stmt)
 ```

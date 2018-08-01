@@ -35,3 +35,20 @@ while result:
     print(result)
     result = ibm_db.fetch_both(stmt)
 ```
+
+## db2常见命令
+```sh
+$ #连接数据库
+$ db2 connect to sample
+$ #列出数据表
+$ db2 list tables
+$ #列出系统表
+$ db2 list tables for system
+$ #列出所有表
+$ db2 list tables for all 
+$ #列出用户表
+$ db2 list tables for user
+$ #显示表结构
+$ db2 describe table tablename
+
+```

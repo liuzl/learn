@@ -63,7 +63,20 @@ F|cap||none|Floor-end
     * 通过grConv得到不定长phrase的表示
     * 无缝接纳Label transition和Lexicon
     * 计算容易并行
+#### 影响LUIS机器学习模型的主要因素
+* 标注数据量和质量
+* 用户自定义特征 Phrase List & Regex
 
+#### 自定义特征
+* Phrase List
+  * 通常用于帮助Entity Extraction
+  * 提供某一类Entity的可能值，例如：咖啡种类，城市名称等
+  * 不需要指定具体对应哪一类Entity，系统会自动推断
+  * 须要在标注的数据中有一定的覆盖率（保证被充分训练）
+  * 须要能够覆盖未出现在标注数据中的Entity取值（增强通用性）
+  * 定义一些Intent相关的关键字可以帮助Intent的识别
+* Regular Expressions
+  * 和Phrase List类似，只是通过特定规则来定义Entity的取值，例如：时间，比分，订单号等
 ### 主动学习
 
 

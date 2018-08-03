@@ -77,7 +77,17 @@ F|cap||none|Floor-end
   * 定义一些Intent相关的关键字可以帮助Intent的识别
 * Regular Expressions
   * 和Phrase List类似，只是通过特定规则来定义Entity的取值，例如：时间，比分，订单号等
-### 主动学习
+#### 交互式Phrase List编辑
+* 我们从互联网上挖掘出一系列包含特定语义的列表
+* 用户只需要提供1~2个词即可开启推荐
+* 根据用户对推荐词的选择，系统会不停优化推荐算法
+* 实验表明通过交互式编辑，系统可节省50~70%的编辑工作
+### 主动学习（Active Learning）
+#### 最大化数据标注收益
+* 在EndPoint日志中自动选择待标注数据
+* 更快的Accuracy增长
+#### LUIS中的主动学习
+* 推荐对某个Intent/Entity最有帮助的Utterance
 
 
 ## 参考资料

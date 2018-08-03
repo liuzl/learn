@@ -58,6 +58,11 @@ at|lower||none|none
 13|num||none|Floor-start
 F|cap||none|Floor-end
 
+* Gated Recursive Convolutional Neural Networks (grConv)
+  * Learning grSemi-CRFs
+    * 通过grConv得到不定长phrase的表示
+    * 无缝接纳Label transition和Lexicon
+    * 计算容易并行
 
 ### 主动学习
 

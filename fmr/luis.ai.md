@@ -39,6 +39,26 @@
   * 我们需要用户提供哪些参数？
   * Parameters
   * Entity Extraction
+#### 数据标注
+#### 特征提取
+Token|Token Format|...|Phrase List Matching|Regular Expression Matching
+----|----|----|----|----
+Schedule|cap||none|none
+a|lower||none|none
+meeting|lower||none|none
+for|lower||none|none
+my|lower||none|none
+team|lower||none|none
+next|lower||none|none
+Tuesday|cap||none|none
+morning|lower||none|none
+with|lower||none|none
+Johannes|cap||Name-start|none
+at|lower||none|none
+13|num||none|Floor-start
+F|cap||none|Floor-end
+
+
 ### 主动学习
 
 

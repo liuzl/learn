@@ -1,4 +1,4 @@
-# luis.ai
+# luis.ai - Language Understanding Intelligence Service
 
 ## LUIS的技术浅析 - 曹涌
 

@@ -1,3 +1,4 @@
 * [函数式编程初探](http://www.ruanyifeng.com/blog/2012/04/functional_programming.html)
 * [Neural Networks, Types, and Functional Programming](http://colah.github.io/posts/2015-09-NN-Types-FP/)
 * [Pros and cons of functional programming](https://itnext.io/pros-and-cons-of-functional-programming-32cdf527e1c2)
+> The imperative approach follows the principle of workflow control and answers the question ‘how to do’. The declarative approach describes the data flow and answers the question ‘what to do’.

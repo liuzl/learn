@@ -1,0 +1,1 @@
+* [Formal Semantics: an Introduction](http://sfl.bit.edu.cn/docs/2013-09/20130922110530521943.pdf), Dag Westerstahl, Stockholm University, A course at Beijing Normal University, October 21 – November 1, 2013

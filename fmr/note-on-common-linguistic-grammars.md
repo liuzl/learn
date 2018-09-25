@@ -56,3 +56,22 @@ There’re common grammars not belonging to any of the two approaches. For examp
 * Lexicalized Tree Adjoining Grammar(LTAG), a TAG armed with lexical surface forms
 
 Although it is possible to classify these grammar to Type-0/1/2/3, that’s not critical questions thus in literature they are usually discussed in parallel to the grammar of formal language.
+
+## Equivalence between Grammars
+
+Since there’re so much grammars so far, it’s natural to compare any two of them. For example, how powerful is some one compared to another, i.e. the equivalence between two grammars.
+
+>Two grammar are weakly equivalent, iff they can generate the same language string. 
+Two grammar are strongly equivalent, iff they can generate not only the same language string but also the derived tree.
+
+It has been proven that these grammar are weakly equivalent: *Head Grammar*, *Linear Indexed Grammar*, *Compositional Categorical Grammar*(CCG), and *Tree Adjoining Grammar*(TAG). And *Lexicalized Tree Adjoining Grammar*(LTAG) is strongly equivalent to the *Head-driver Phrase Structure Grammar*(HPSG).
+
+Then we can conclude the expressive power of them, from less expressive to stronger:
+
+* Regular Grammar
+* CFG
+* Head Grammar, Linear Indexed Grammar, CCG, TAG, LTAG, HPSG
+* LCFRS
+* GCFG
+* CSG
+* Unrestricted

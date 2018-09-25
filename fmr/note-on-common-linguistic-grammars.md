@@ -18,3 +18,41 @@ It is common to augment a CFG with some extensions, making it more powerful and 
 * Head Grammar is less powerful LCFRG
 * Indexed Grammar is another kind of CFG
 * Linear Indexed Grammar is a specialized Indexed Grammar
+
+## Linguistic View of Grammar
+
+On the other linguistic side, people are also talking about grammars, which try to explain how human languages are generated and understood. Though they could be classified as some of the four types above, it is usually not the key point to proclaim or prove that. There are some philosophical debate and different approaches for grammars in natural language.
+
+There are 2 main approaches to describe grammar or word relations in human language, namely the **consituency relation** and the **dependency relation**. There are also other important approaches like cognitive grammar, functional grammar and stochastic grammar, which will not be covered in this post.
+
+The ***Consituency Relation*** side mainly focus on syntactic structures like phrases, e.g. noun phrases, verb phrases, extracted from sentences.
+
+* Phrase Structure Grammar
+* General Phrase Structure Grammar
+* Head-driven Phrase Structure Grammar(HPSG)
+* Lexical Functional Grammar(LFG)
+* Minimalist Programm, which favors bare phrase structure and abandoned X-bar theory
+* Nanosyntax
+* Arcpair Grammar
+* Categorial Grammar, and the famous Compositional Categorical Grammar(CCG)
+
+Note the last two are not directly originated from Chomsky’s theory.
+
+And the *English Resources Grammar*(ERG) is a hand-crafted, linguistic-motivated HPSG for English only, and produces English Resource Semantics(ERS). But this lies on the semantic topic, which will not be covered by the post.
+
+And here is the ***Dependency Relation*** side. Rather than composing words into phrases, this approach emphasize relations between any two words in a sentence.
+
+* Recursive Categorical Syntax(algebraic syntax)
+* Functional Generative Description
+* Lexicase
+* Link Grammar
+* Meaning-text Theory
+* Operator Grammar
+* Word Grammar
+
+There’re common grammars not belonging to any of the two approaches. For example,
+
+* Tree Adjoining Grammar(TAG)
+* Lexicalized Tree Adjoining Grammar(LTAG), a TAG armed with lexical surface forms
+
+Although it is possible to classify these grammar to Type-0/1/2/3, that’s not critical questions thus in literature they are usually discussed in parallel to the grammar of formal language.

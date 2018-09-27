@@ -13,3 +13,7 @@
 ## 通过正则表达式筛选数据
 
 * `df[df.Number.str.match('^628953604|^628953605|.*894.*')]`
+
+## 随机打乱数据顺序
+
+* `df = df.sample(frac=1).reset_index(drop=True)`

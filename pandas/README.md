@@ -9,3 +9,7 @@
 
 ## References
 * https://pandas.pydata.org/pandas-docs/stable/10min.html
+
+## 通过正则表达式筛选数据
+
+* `df[df.Number.str.match('^628953604|^628953605|.*894.*')]`

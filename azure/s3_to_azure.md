@@ -3,3 +3,6 @@
   * config aws s3
   * config azure storeage blobs
   * `rclone copy aws:bucket azure:account`
+  * 常用命令
+    * `rclone config`
+    * `rclone lsd aws:bucket`

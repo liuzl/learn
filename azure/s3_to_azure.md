@@ -6,3 +6,5 @@
   * 常用命令
     * `rclone config`
     * `rclone lsd aws:bucket`
+  * https://github.com/ncw/rclone/issues/1718
+    * `--ignore-size` option

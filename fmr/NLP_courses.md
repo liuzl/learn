@@ -1,3 +1,6 @@
+## https://nlg.isi.edu/nl-seminar/
+
+## Heng Ji
 * http://nlp.cs.rpi.edu/course/spring18/nlp.html
 * http://nlp.cs.rpi.edu/course/fall14/nlp.html `Google "slot grammar watson"`
   * http://nlp.cs.rpi.edu/hengji.html

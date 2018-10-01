@@ -3,6 +3,10 @@
 ## Notes
 >  In fact, probabilistic tree automata are generatively more powerful than probabilistic context-free grammars (PCFGs), when we consider the latter as devices that generate tree languages.
 
+### RTG vs. CFG
+
+Regular Tree Grammar vs. Context-Free Grammar
+
 ## 参考资料
 * [Beyond Sentential Semantic Parsing: Tackling the Math SAT with a Cascade of Tree Transducers](http://ai2-website.s3.amazonaws.com/publications/emnlp-sentiential-semantic-parsing.pdf), 2017, AI2
 * [Tiburon: A Weighted Tree Automata Toolkit](https://kevincrawfordknight.github.io/papers/ciaa06.pdf), 2006

@@ -15,3 +15,4 @@ Regular Tree Grammar vs. Context-Free Grammar
 * [Tree Automata in Parsing and Machine Translation](http://www.informatik.uni-leipzig.de/alg/pub/slides/2017-04-20.pdf), 2017
 * [Parsing Algorithms based on Tree Automata](http://www.ims.uni-stuttgart.de/institut/mitarbeiter/maletti/pub/malsat09.pdf), 2009
 * [Converting a CFG to a regular tree grammar](https://www.youtube.com/watch?v=2oQjiRagbFA), Video
+* [Index 1,600,000,000 Keys with Automata and Rust](https://blog.burntsushi.net/transducers/)

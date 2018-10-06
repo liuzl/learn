@@ -8,5 +8,7 @@
 * **https://github.com/buger/goreplay**
   * [设置镜像流量的百分比](https://github.com/buger/goreplay/wiki/Rate-limiting)
     ```sh
-    sudo ./goreplay --input-raw :9301 --output-http="http://localhost:8301|80%"
+    # replay server will not get more than 20% of requests 
+    # useful for high-load environments
+    sudo ./goreplay --input-raw :9301 --output-http="http://localhost:8301|20%"
     ```

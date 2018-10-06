@@ -4,6 +4,11 @@
 git checkout -b develop master
 ```
 
+* 从一个commit号创建分支
+```sh
+git checkout -b branchname <sha1-of-commit or HEAD~3>
+```
+
 * 将develop分支发布到master分支
 ```sh
 # 切换到Master分支

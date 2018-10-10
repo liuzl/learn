@@ -17,3 +17,10 @@
 ## 随机打乱数据顺序
 
 * `df = df.sample(frac=1).reset_index(drop=True)`
+
+## 读取超大csv文件
+```python
+for df in pd.read_csv("src.csv", header=None, chunksize=100000):
+    df[1] = df[1].sample(frac=1).reset_index(drop=True)
+    df.to_csv("dst.csv", header=None, index=False, mode='a')
+```

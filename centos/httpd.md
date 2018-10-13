@@ -4,6 +4,8 @@
 ```sh
 sudo yum install httpd.x86_64
 sudo yum install php php-devel
+# 安装php的mongo扩展
+sudo yum install php-pecl-mongo.x86_64
 ```
 ## 启动httpd
 ```sh

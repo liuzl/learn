@@ -14,4 +14,5 @@ sudo docker run -d --name myngnix -p 8080:80 -v /home/zliu/work/finance_kirin0.1
 ## 四、修改ngnix配置
 ```sh
 sudo docker exec -it myngnix /bin/bash
+sudo docker cp ./ngnix.conf mynginx:/etc/nginx/conf.d/default.conf
 ```

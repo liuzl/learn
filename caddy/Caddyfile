@@ -1,0 +1,7 @@
+*:9999 {
+    bind 127.0.0.1
+    proxy /v2/ocr/general/ 127.0.0.1:8000/v1/ocr/general/ {
+        without /v2/ocr/general/
+    }
+    log ./access.log
+}

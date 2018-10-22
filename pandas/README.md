@@ -9,3 +9,20 @@
 
 ## References
 * https://pandas.pydata.org/pandas-docs/stable/10min.html
+
+## 通过正则表达式筛选数据
+```python
+df[df.Number.str.match('^628953604|^628953605|.*894.*')]
+```
+
+## 随机打乱数据顺序
+```python
+df = df.sample(frac=1).reset_index(drop=True)
+```
+
+## 读取超大csv文件
+```python
+for df in pd.read_csv("src.csv", header=None, chunksize=100000):
+    df[1] = df[1].sample(frac=1).reset_index(drop=True)
+    df.to_csv("dst.csv", header=None, index=False, mode='a')
+```

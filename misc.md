@@ -14,3 +14,7 @@
 2. [驱动海量大数据实时多维分析，优酷为什么会选择Druid？](https://mp.weixin.qq.com/s?__biz=MzA5NzkxMzg1Nw==&mid=2653160326&idx=1&sn=9c6a91df0ff088f799eefe2ca14926ca&scene=0&key=8dcebf9e179c9f3a11295728e84286c8427ddea06d951c4e08f2efb52ad1d982d9f5f8bbe434244929ff240d0ec88b5d&ascene=0&uin=Mjk1ODMyNTYyMg%3D%3D&devicetype=iMac+MacBookPro11%2C4+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=Uax4it219TvGLrsu%2B5wo6lhIzCrLx6RPRmntpCJlCs%2FagzKHed%2B%2F8X23mVqpb6o0)
 
 > 得益于搜索引擎的模糊查询能力, 现在采用搜索引擎作为metric数据存储的系统越来越多了。常用的就是elasticsearch，这篇文章介绍了一个新的系统Druid，作为elasticsearch的竞争对手，看看Druid为我们带来了什么。
+
+## misc
+
+* https://apple.stackexchange.com/questions/254380/macos-mojave-invalid-active-developer-path

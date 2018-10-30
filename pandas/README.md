@@ -36,3 +36,8 @@ conda install s3fs
 import pandas as pd
 df = pd.read_csv("s3://izidata/gray.csv.gz", header=None)
 ```
+
+## join数据
+```python
+result = pd.merge(click, df, on="key")
+```

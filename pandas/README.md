@@ -68,3 +68,8 @@ Out[6]:
 1  2  3   4   6
 2  3  4   6   9
 ```
+
+## 去重
+```python
+df.drop_duplicates()
+```

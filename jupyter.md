@@ -6,3 +6,5 @@
   * `~/my_venv_name/bin/jupyter-notebook`
 
 * [Interactive Jupyter Dashboards](https://annefou.github.io/jupyter_dashboards/03-interactive/index.html)
+
+* [Reproducible Research with Interactive Jupyter Dashboards](https://annefou.github.io/jupyter_dashboards/)

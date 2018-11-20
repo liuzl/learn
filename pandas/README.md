@@ -26,3 +26,50 @@ for df in pd.read_csv("src.csv", header=None, chunksize=100000):
     df[1] = df[1].sample(frac=1).reset_index(drop=True)
     df.to_csv("dst.csv", header=None, index=False, mode='a')
 ```
+
+## 直接读取s3文件
+需要安装`s3fs`
+```sh
+conda install s3fs
+```
+```python
+import pandas as pd
+df = pd.read_csv("s3://izidata/gray.csv.gz", header=None)
+```
+
+## join数据
+```python
+result = pd.merge(click, df, on="key")
+```
+
+## 一列拆多列
+```python
+In [1]: from pandas import *
+
+In [2]: def calculate(x):
+   ...:     return x*2, x*3
+   ...: 
+
+In [3]: df = DataFrame({'a': [1,2,3], 'b': [2,3,4]})
+
+In [4]: df
+Out[4]: 
+   a  b
+0  1  2
+1  2  3
+2  3  4
+
+In [5]: df["A1"], df["A2"] = zip(*df["a"].map(calculate))
+
+In [6]: df
+Out[6]: 
+   a  b  A1  A2
+0  1  2   2   3
+1  2  3   4   6
+2  3  4   6   9
+```
+
+## 去重
+```python
+df.drop_duplicates()
+```

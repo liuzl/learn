@@ -4,3 +4,7 @@
 
 * [Jupyter Notebook in virtualenv](https://stackoverflow.com/questions/46051998/jupyter-notebook-in-virtual-enviroment-doesnt-see-the-virtual-env-packages)
   * `~/my_venv_name/bin/jupyter-notebook`
+
+* [Interactive Jupyter Dashboards](https://annefou.github.io/jupyter_dashboards/03-interactive/index.html)
+
+* [Reproducible Research with Interactive Jupyter Dashboards](https://annefou.github.io/jupyter_dashboards/)

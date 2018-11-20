@@ -12,3 +12,5 @@
     # useful for high-load environments
     sudo ./goreplay --input-raw :9301 --output-http="http://localhost:8301|20%"
     ```
+## iptables
+* http://www.111cn.net/sys/linux/46342.htm

@@ -18,3 +18,6 @@
 ## misc
 
 * https://apple.stackexchange.com/questions/254380/macos-mojave-invalid-active-developer-path
+
+## json to csv
+* https://www.sanity.io/blog/exporting-your-structured-content-as-csv-using-jq-in-the-command-line

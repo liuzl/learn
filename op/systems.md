@@ -14,3 +14,15 @@
     ```
 ## iptables
 * http://www.111cn.net/sys/linux/46342.htm
+
+## 查看动态链接库
+
+### linux
+```sh
+ldd fmr.so
+```
+
+### mac
+```sh
+otool -L fmr.dylib
+```

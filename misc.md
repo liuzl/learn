@@ -21,3 +21,6 @@
 
 ## json to csv
 * https://www.sanity.io/blog/exporting-your-structured-content-as-csv-using-jq-in-the-command-line
+
+## gcc on windows
+* https://blog.kedixa.top/2017/install-mingw-w64/

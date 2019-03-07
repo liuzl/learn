@@ -1,3 +1,6 @@
+//g++ --std=c++11 main.cc
+//https://www.jianshu.com/p/d686ad9de817
+
 #include <iostream>
 
 using namespace std;

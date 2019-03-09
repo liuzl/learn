@@ -10,3 +10,14 @@
 ```sh
 docker exec -it <container_id> bash
 ```
+
+### https://www.fengbohello.top/archives/go-env-docker
+```sh
+docker run -it --rm -v /Users/hwang/golangdocker/go:/go --privileged golang bash
+```
+
+### 重启docker进程
+
+```sh
+systemctl restart docker.service
+```

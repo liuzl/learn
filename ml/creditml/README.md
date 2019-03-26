@@ -4,3 +4,4 @@
 * [从金融风控实战中学到的经验](https://www.jianshu.com/p/cdc795d39e99)
 * [听说乃们现金贷没有风控？！](https://zhuanlan.zhihu.com/p/25862872)
 * [通俗理解kaggle比赛大杀器xgboost](https://blog.csdn.net/v_JULY_v/article/details/81410574)
+* [IV值的计算及使用](https://www.jianshu.com/p/cc4724a373f8)

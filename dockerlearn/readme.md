@@ -20,4 +20,5 @@ docker run -it --rm -v /Users/hwang/golangdocker/go:/go --privileged golang bash
 
 ```sh
 systemctl restart docker.service
+sudo service docker restart
 ```

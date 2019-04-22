@@ -24,3 +24,6 @@
 
 ## gcc on windows
 * https://blog.kedixa.top/2017/install-mingw-w64/
+
+## -> in python
+* https://stackoverflow.com/questions/14379753/what-does-mean-in-python-function-definitions

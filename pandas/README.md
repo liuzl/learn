@@ -37,6 +37,14 @@ import pandas as pd
 df = pd.read_csv("s3://izidata/gray.csv.gz", header=None)
 ```
 
+## How to treat NULL as a normal string with pandas?
+* https://stackoverflow.com/questions/44128033/pandas-reading-null-as-a-nan-float-instead-of-str
+* https://stackoverflow.com/questions/50683765/how-to-treat-null-as-a-normal-string-with-pandas
+
+```python
+pd.read_csv(StringIO(data), na_filter=False)
+```
+
 ## join数据
 ```python
 result = pd.merge(click, df, on="key")

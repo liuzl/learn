@@ -74,3 +74,4 @@ python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 * [python 编写简单的setup.py](https://www.cnblogs.com/lyrichu/p/6818008.html)
 * [How to avoid building C library with my python package?](https://stackoverflow.com/questions/31380578/how-to-avoid-building-c-library-with-my-python-package)
 * [setup.py里的几个require](https://note.qidong.name/2018/01/python-setup-requires/)
+* [python-packaging](https://python-packaging-zh.readthedocs.io/zh_CN/latest/minimal.html)

@@ -4,6 +4,18 @@
 
 数据结构主要在源文件[types.go](https://github.com/liuzl/fmr/blob/master/types.go)中定义。
 
+### FMR结构
+
+```go
+// FMR stands for Funtional Meaning Representation
+type FMR struct {
+	Fn   string `json:"fn,omitempty"`
+	Args []*Arg `json:"args,omitempty"`
+}
+```
+
+其中有两个字段：`Fn`表示函数名称，`Args`表示函数的参数。
+
 ### FMR函数参数
 
 ```go

@@ -8,4 +8,7 @@ fn main() {
 
     let mut writer = BufWriter::new(stdout.lock());
     say(out, width, &mut writer).unwrap();
+
+    let logical: bool = true;
+    println!("logical is {}", logical);
 }

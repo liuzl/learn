@@ -81,3 +81,11 @@ Out[6]:
 ```python
 df.drop_duplicates()
 ```
+
+## 读取jsonl文件
+```python
+from pandas.io.json import json_normalize
+import json
+
+df = json_normalize([json.loads(x) for x in open('file.json')])
+```

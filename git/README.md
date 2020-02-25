@@ -13,3 +13,7 @@ vim /etc/ssh/ssh_config
 #uncomment this line
 #GSSAPIAuthentication no
 ```
+
+git tag
+
+* https://www.jianshu.com/p/36202c29e6ae

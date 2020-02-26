@@ -16,3 +16,7 @@ PID TTY TIME CMD
 1392 pts/0 00:00:00 caddy
 kill -s USR1 1392
 ```
+
+## 参考资料
+
+* https://liuzhichao.com/2018/caddy/

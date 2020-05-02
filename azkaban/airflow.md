@@ -10,3 +10,5 @@ airflow initdb
 # 启动
 airflow webserver
 ```
+
+* [Airflow 入门笔记](https://www.jianshu.com/p/979a26040a95)

@@ -1,0 +1,28 @@
+println("hello world")
+
+student := {"name":"zhangsan", "age": 20}
+println(student)
+
+students := [{"name":"zhangsan","age":20},{"name":"lisi","age":21}]
+println(students)
+
+list1 := [x*x for x <- [1,2,3]]
+println(list1)        //[1 4 9]
+
+list2 := [x for x <- [1,2,3,4,5,6,7,8,9], x % 2 == 0]
+println(list2)      //[2 4 6 8]
+
+map1 := {x: i for i, x <- [1,2,4,8]}
+println(map1)    //map[1:0 2:1 4:2 8:3]
+
+map2 := {x: i for i, x <- [1,2,3,4,5,6,7,8,9], i % 2 == 0}
+println(map2)    //map[1:0 3:2 5:4 7:6 9:8]
+
+map3 := {v: k for k, v <- {1:"a",2:"b",3:"c",4:"d"}, k > 2}
+println(map3)    //map[c:3 d:4]
+
+for i<- [1,2,3,4,5,6,7,8,9], i % 2 == 0{
+    println(i)
+}
+
+

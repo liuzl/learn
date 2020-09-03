@@ -1,0 +1,13 @@
+import ("strconv")
+
+func add(x,y string) (int, error){
+    return strconv.Atoi(x)? + strconv.Atoi(y)?, nil
+}
+
+sum, err := add("1","8")
+println(err)
+println(sum)
+
+sum, err = add("1","xx")
+println(err)
+println(sum)

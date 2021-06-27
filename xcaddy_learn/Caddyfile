@@ -1,0 +1,9 @@
+:2021 {
+    respond "zliu's server 2021"
+    log {
+        output file ./log/all {
+            roll_size 10MiB
+            roll_keep 10
+        }
+    }
+}

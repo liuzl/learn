@@ -34,3 +34,12 @@ echo "1" > /proc/sys/net/ipv4/tcp_tw_recycle
 
 ## -> in python
 * https://stackoverflow.com/questions/14379753/what-does-mean-in-python-function-definitions
+
+## ssh keep alive
+```sh
+vim ~/.ssh/config
+ServerAliveInterval 60
+```
+
+* https://wpbeaches.com/how-to-make-your-ssh-terminal-shell-sessions-last-longer-on-macos/
+

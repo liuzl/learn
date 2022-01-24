@@ -43,3 +43,13 @@ ServerAliveInterval 60
 
 * https://wpbeaches.com/how-to-make-your-ssh-terminal-shell-sessions-last-longer-on-macos/
 
+## mac terminal start vscode
+```sh
+# add the following line to .bashrc
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+```
+
+```sh
+# start vscode under the current dir
+code .
+```

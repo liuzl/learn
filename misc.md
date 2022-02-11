@@ -53,3 +53,9 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 # start vscode under the current dir
 code .
 ```
+
+## mac, zsh after install nvm
+
+> zsh compinit: insecure directories, run compaudit for list.
+
+https://blog.csdn.net/CaptainJava/article/details/109585966

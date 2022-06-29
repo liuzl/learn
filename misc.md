@@ -59,3 +59,7 @@ code .
 > zsh compinit: insecure directories, run compaudit for list.
 
 https://blog.csdn.net/CaptainJava/article/details/109585966
+
+## jq
+
+https://stackoverflow.com/questions/61492210/how-to-stringify-json-using-jq

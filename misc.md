@@ -63,3 +63,8 @@ https://blog.csdn.net/CaptainJava/article/details/109585966
 ## jq
 
 https://stackoverflow.com/questions/61492210/how-to-stringify-json-using-jq
+
+## cmake w64devkit
+```
+cmake -G "MinGW Makefiles" -DCMAKE_MAKE_PROGRAM=make ..
+```

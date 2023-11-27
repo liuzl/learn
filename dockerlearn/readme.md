@@ -22,3 +22,10 @@ docker run -it --rm -v /Users/hwang/golangdocker/go:/go --privileged golang bash
 systemctl restart docker.service
 sudo service docker restart
 ```
+
+### Run `docker` command without `sudo`
+
+添加$USER到docker usergroup
+```sh
+sudo usermod -aG docker $USER
+```

@@ -68,3 +68,9 @@ https://stackoverflow.com/questions/61492210/how-to-stringify-json-using-jq
 ```
 cmake -G "MinGW Makefiles" -DCMAKE_MAKE_PROGRAM=make ..
 ```
+
+## openvpn
+在Linux下启动openvpn客户端
+```sh
+openvpn --daemon --cd /etc/openvpn/client --config YOUR_CONFIG.ovpn --log-append /var/log/openvpn.log
+```

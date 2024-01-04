@@ -74,3 +74,9 @@ cmake -G "MinGW Makefiles" -DCMAKE_MAKE_PROGRAM=make ..
 ```sh
 openvpn --daemon --cd /etc/openvpn/client --config YOUR_CONFIG.ovpn --log-append /var/log/openvpn.log
 ```
+
+## ssh转发
+```sh
+# GatewayPorts yes
+ssh -fgN -R 2222:10.8.0.14:22 localhost
+```

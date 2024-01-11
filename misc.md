@@ -80,3 +80,8 @@ openvpn --daemon --cd /etc/openvpn/client --config YOUR_CONFIG.ovpn --log-append
 # GatewayPorts yes
 ssh -fgN -R 2222:10.8.0.14:22 localhost
 ```
+
+## npm使用淘宝源
+```sh
+npm config set registry http://registry.npmmirror.com
+```

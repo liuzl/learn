@@ -85,3 +85,14 @@ ssh -fgN -R 2222:10.8.0.14:22 localhost
 ```sh
 npm config set registry http://registry.npmmirror.com
 ```
+
+## 下载抖音视频
+
+打开devtool
+```js
+open(
+  document.querySelectorAll("video")[
+    document.querySelectorAll("video").length == 1 ? 0 : 1
+  ].children[0].src
+);
+```

@@ -77,6 +77,7 @@ openvpn --daemon --cd /etc/openvpn/client --config YOUR_CONFIG.ovpn --log-append
 
 ## ssh转发
 ```sh
+# 需要修改sshd_config的配置
 # GatewayPorts yes
 ssh -fgN -R 2222:10.8.0.14:22 localhost
 ```
